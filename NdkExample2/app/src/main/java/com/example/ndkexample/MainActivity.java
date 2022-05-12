@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     static {
         System.loadLibrary("ndkexample");
     }
@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String txt= editText.getText().toString();
         int txtLen = getTextLen(txt);
         textView.setText("Text Length is:"+txtLen);
-
     }
     public void onClick(View view){
         if(view==button){
